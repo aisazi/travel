@@ -11,7 +11,7 @@ header {
     height: 75px;
     position: fixed;
     padding: 0;
-    background-color:#adc1eb;
+    background-color:#f0f0f5;
     box-shadow: -1px 12px 35px -11px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 12px 35px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 12px 35px -11px rgba(0,0,0,0.75);
@@ -54,7 +54,7 @@ a {
     margin: 20px;
 }
 .banner {
-    background-image: url("nature.jpg");
+    background-image: url("pear.jpg");
     width: 100%;
     height: 1200px;
     padding-top: 200px;
