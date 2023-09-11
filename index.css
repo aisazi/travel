@@ -17,6 +17,9 @@ header {
     z-index: 1;
 
 }
+.drop-btn {
+    display: none;
+}
 header button {
     margin: 10px 20px 10px 10px;
     font-size: 20px;
@@ -26,6 +29,7 @@ header button {
 }
 .flowing {
     float: right;
+    text-align: center;
 }
 .buynow a {
    color: white;
@@ -52,17 +56,18 @@ a {
     margin: 20px;
 }
 .banner {
-    background-image: url("travel.jpg");
+    background-image: url("nature.jpg");
     width: 100%;
     height: 1200px;
-    text-align: center;
     padding-top: 200px;
     background-repeat: no-repeat;
+    text-align: center;
 }
 .banner div {
    width: 500px;
    margin: 0 auto;
    padding: 100px;
+   text-align: center;
    border-radius: 20px;
    transition: 1s;
 }
@@ -182,7 +187,7 @@ a {
     line-height: 25px;
   }
   .banner2 {
-    background-image: url("forest.jpg");
+    background-image: url("sea.jpg");
     height: 460px;
     width: 100%;
     background-repeat: no-repeat;
@@ -226,13 +231,13 @@ a {
     margin-top: 50px;
 }
 .green {
-    background-color: #1dcb94;
+    background-color:#c2a3c2 ;
 }
 .blue {
-    background-color:#306de8;
+    background-color:#ff944d;
 }
 .red {
-    background-color:#ff695c ;
+    background-color:#ff8a80 ;
 }
 .card h3 {
     margin: 30px;
@@ -253,7 +258,7 @@ a {
     font-size: 20px;
 }
 .undercards {
-    width: 70%;
+    width: 40%;
     margin: 0 auto;
     margin-bottom: 130px;
     text-align: left;
@@ -347,6 +352,7 @@ footer {
 }
 footer section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 footer h2 {
@@ -364,4 +370,101 @@ footer p {
 footer a {
     margin: 10px;
     color: #1dcb94;
+}
+
+/* tablet screen */
+@media only screen and (max-width: 1000px) {
+    .flowing {
+        float: none;
+    }
+    .banner div {
+        margin: 0;
+    }
+    section {
+        width: 80%;
+    }
+    .banner {
+      padding-left: 150px;
+    }
+    .banner2 {
+      padding-top: 80px;
+      background-size: 100% 400px;
+    }
+    .undercards {
+        width: 70%;
+    }
+    .cards {
+        width: 49%;
+    }
+    footer {
+       height: 500px;
+    }
+    footer section div {
+      width: 50%;
+      margin-bottom: 100px;
+    }
+}
+
+/* phone screen */
+@media only screen and (max-width: 600px) {
+    header {
+        top: 0;
+        padding-top: 0px;
+        transition: 0.5s;
+    }
+
+    .flowing {
+        display: none;
+        transition: 0.5s;
+    }
+    .drop-btn {
+        margin: 40px 40px 0 0;
+        display: block;
+        float: right;
+        height: 600px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    header button {
+        margin: 10px 20px 10px 10px;
+        font-size: 20px;
+        font-weight: 300;
+        width: 80%;
+        border: none;
+        background: none;
+    }
+    .banner {
+        padding: 0;
+        height: 700px;
+    }
+    .banner div {
+        padding: 200px 0 0 0 ;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .description {
+        margin: 100px 0;
+    }
+    .banner2 input {
+        width: 300px;
+    }
+    .coloredcards {
+        display: block;
+    }
+    .coloredcards .card {
+        width: 100%;
+        padding: 10px 0 20px 0;
+        margin-bottom: 10px;
+    }
+    .undercards {
+        margin-top: 60px;
+    }
+    .travel-cards {
+        display: block;
+    }
+    .travel-cards div {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
